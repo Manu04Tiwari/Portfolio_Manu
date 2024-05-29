@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>My Portfolio</title>
+    <script src="https://kit.fontawesome.com/d016bc7d3c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <img src="../images/Manu Tiwari.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#Header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#porfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i id="cross" class="fas fa-times"></i>
+
+        </ul>
+        <i id="bars" class="fas fa-bars" onclick="openmenu()"></i>
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Slideshow Example</title>
+            <style>
+                /* CSS for slideshow */
+                .slideshow-container {
+                    max-width: 1000px;
+                    position: relative;
+                    margin: auto;
+                    padding-left: 30px;
+
+
+                }
+
+                .mySlides {
+                    display: none;
+                }
+
+                .prev,
+                .next {
+                    cursor: pointer;
+                    position: absolute;
+                    top: 50%;
+                    width: auto;
+
+                    margin-top: -22px;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 18px;
+                    transition: 0.6s ease;
+                    border-radius: 0 3px 3px 0;
+                }
+
+                .next {
+                    right: 0;
+                    border-radius: 3px 0 0 3px;
+                }
+
+                .prev:hover,
+                .next:hover {
+                    background-color: rgba(0, 0, 0, 0.8);
+                }
+            </style>
+        </head>
+
+        <body>
+
+            <div class="slideshow-container">
+                <!-- Slides -->
+                <div class="mySlides">
+                    <img src="../images/ss2.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <img src="../images/ss3.png" style="width:100%">
+                </div>
+
+                <!-- Navigation buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <script>
+                // JavaScript for slideshow functionality
+                var slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) { slideIndex = 1 }
+                    slides[slideIndex - 1].style.display = "block";
+                    setTimeout(showSlides, 2000); // Change image every 2 seconds
+                }
+            </script>
+
+        </body>
+
+        </html>
+
+    </nav>
+    <div id="Header">
+        <div class="container">
+            <div class="row">
+                <div class="header-text">
+                    <p>Front-end Developer</p>
+                    <h1>Hello, I'am <span class="auto-type"></span></h1>
+                </div>
+                <div class="imagemain">
+                    <img src="../images/background banner.jpg">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="../images/profile pic.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Greetings! I'm Manu Tiwari, a budding web developer and Sophomore from GGSIPU, eagerly stepping
+                        into the dynamic world of coding.
+                        With a strong foundation in programming and an insatiable curiosity, I'm primed to contribute
+                        innovative solutions to the digital realm.
+                        Throughout my academic journey, I have honed my skills in various programming languages and
+                        technologies,
+                        eagerly soaking up every opportunity to expand my repertoire and delve deeper into the
+                        intricacies of web development,
+                        which I'll be showing you in the below provided sections . And if you've reached so far , I'm
+                        sure we'll get in touch soon. Until then, keep following along.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>WEB DEVELOPMENT</span><br>HTML, CSS, JAVA, JAVASCRIPT
+                            </li>
+                            <li>
+                                <span>CYBER SECURITY</span><br>Network Security, Encryption
+                            </li>
+                            <li>
+                                <span>COMPETITIVE CODING</span><br>C++,C, Python, Data Structure
+                            </li>
+                            <li>
+                                <span>SOFT SKILLS</span><br>Communication
+                                Problem-solving, Adaptability, Attention to detail,
+                                Time management,
+                                Teamwork,
+                                Creativity,
+                                Continuous learning,
+                                Empathy,
+                                Positive attitude.
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>February-March 2024</span><span>Campus Ambassador</span><br>IIT Gandhinagar
+                            </li>
+                            <li>
+                                <span>Dec 2022-Present</span><span>Society Member</span><br>GDSC, DTC
+                            </li>
+                            <li>
+                                <span>Sep 2023-Present</span><span>Event Manager</span><br>CESTA, DTC
+                            </li>
+                            <li>
+                                <span>Aug 2023-Present</span><span>Lead Graphic Designer</span><br>Editorial Board, DTC
+                            </li>
+                            <li>
+                                <span>Oct 2023-Feb 2024</span><span>Vice President</span><br>Forge Innovators Club, DTC
+                            </li>
+
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>2022-2026</span><br>Btech CSE-Delhi Technical Campus (GGSIPU)
+                            </li>
+                            <li>
+                                <span>2020-2022</span><br>86% - Kendriya Vidyalaya No.2, AFS Hindan
+                            </li>
+                            <li>
+                                <span>2018-2020</span><br>92.6% - Kendriya Vidyalaya No.2, AFS Hindan
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id=" services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-lists">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Building websites fills me with an indescribable happiness.
+                        Each line of code brings me closer to realizing my vision. Overcoming challenges fuels my
+                        determination and excitement.
+                        Crafting visually stunning designs is not just a job, but my passion and source of boundless
+                        joy.
+
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-gear"></i>
+                    <h2>CyberSecurity </h2>
+                    <p>Cybersecurity is not just a profession but a calling that fills me with profound happiness.
+                        Safeguarding digital assets against threats ignites my passion and purpose. Each security
+                        measure implemented brings a sense of accomplishment and fulfillment.
+                        The continuous battle against cyber threats fuels my determination and drives my dedication to
+                        protecting the digital world.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-bug"></i>
+                    <h2>Programming </h2>
+                    <p>Programming isn't merely a skill; it's my profound source of happiness and fulfillment.
+                        Each algorithm solved and function created is a testament to my passion for problem-solving.
+                        Overcoming coding challenges fuels my determination and ignites my creativity.
+                        With every project, programming becomes not just a career, but a deeply rewarding journey of
+                        exploration and growth
+
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-gear"></i>
+                    <h2>Graphic Designer </h2>
+                    <p>Graphic design isn't just a job; it's my source of happiness and creativity.
+                        Every time I draw or choose colors, it feels like bringing my ideas to life. Solving design
+                        problems makes me feel determined and excited.
+                        With each project, graphic design becomes more than work—it's a fun way to express myself and
+                        make things look great.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="porfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="../images/tribute.png">
+                    <div class="layer">
+                        <h3>Tribute Page for women in STEM</h3>
+                        <p>
+                            This is a Tribute page specially designed to pay homage to all the females who have masterd
+                            thid world of STEM.
+                        </p>
+                        <a href="https://github.com/Manu04Tiwari/Tribute-page"><i
+                                class="fa-solid fa-up-right-from-square fa-fade"></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="../images/job portal.png">
+                    <div class="layer">
+                        <h3>Online Job Portal</h3>
+                        <p>
+                            The Online Job Portal System, built with C++, offers a user-friendly platform for job
+                            seekers and employers.
+                            It includes features like user registration, job search, resume management, application
+                            tracking, employer dashboard, messaging, and analytics.
+                            This system aims to streamline the job hunting and recruitment process, providing a
+                            convenient and efficient solution for both parties involved.
+                        </p>
+                        <a href="https://github.com/Manu04Tiwari/online-job-portal"><i
+                                class="fa-solid fa-up-right-from-square fa-fade"></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="../images/stock.png">
+                    <div class="layer">
+                        <h3>Stock Prices Predictor</h3>
+                        <p>
+                            By leveraging machine learning algorithms, this project aims to help investors make informed
+                            decisions and potentially improve their returns on investment.
+                            Predicting stock prices is a challenging task, but with the right techniques, we can gain
+                            valuable insights into market trends.
+                        </p>
+                        <a href="https://github.com/Manu04Tiwari/Stock-Predictor-"><i
+                                class="fa-solid fa-up-right-from-square fa-fade"></i></a>
+
+                    </div>
+                </div>
+
+
+                <div class="work">
+                    <img src="../images/local gym.png">
+                    <div class="layer">
+                        <h3>
+                            Local Gym Model</h3>
+                        <p>
+                            This Local Gym Model project is aimed to provide the services to the customers who are in
+                            love with nature and this helps in seamlessly combining the outdoor and indoor activities.
+                        </p>
+                        <a href="https://github.com/Manu04Tiwari/Local-gym-/blob/main/screenshot.PNG"><i
+                                class="fa-solid fa-up-right-from-square fa-fade"></i></a>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <a href="" class="btn">See More</a>
+    </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Connect With Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>marttiwari8219@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 xx xxx xxx xx</p>
+                    <div class="social-icon">
+                        <a href="www.linkedin.com/in/manu-tiwari-89161725a"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Manu04Tiwari"><i class="fa-brands fa-github"></i></a>
+
+                    </div>
+                    <a href="../images/Resume R.pdf" download class="btn btn2">Resume</a>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg">
+
+                    </span>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-400px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwTNGh9GFNVtjlqUXytuSt8eDbgV0I8sQ7J49whShNTovNYXKJdCc82fvB4f3RWiUOf/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Manu Tiwari "],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        })
+    </script>
+    <div class="footer">
+        <footer>
+            This Website belongs to "Manu Tiwari"
+        </footer>
+    </div>
+</body>
+
+</html>
